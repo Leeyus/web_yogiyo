@@ -9,21 +9,19 @@
 	.header{
 		width: 100%;
 		height: 78px;
-		background-color: red;
+		background-color: #DC1400;;
 		display: flex;
 		top:0;
 	}
 	.nav{
-		width: 1020px;
+		width: 54%;
 		height: 78px;
-		background-color: blue;
 		margin: 0 auto;
 	}
 	.top_logo{
 		
-		width:90px;
+		width:8.9%;
 		height:38px;
-		background-color: gray;
 		margin: 20px 10px;
 		display: inline-block;
 		
@@ -33,17 +31,29 @@
 		height: 100%;
 	}
 	.logi{
-		width: 150px;
-		height: 78px;
+		width: 14.8%;
+		height: 62px;
 		float: right;
-		background-color: black;
-		
+		margin:5px 10px 0 0;
 	}
-	.logi li{
-		width: 150px;
-		height: 40px;
-		display:inline-block;
+	.logi_menu{
+		width:98.4%;
+		height:24px;
+		margin:15px 0 7px 0;
+		border :1px solid #ea7266;
+		padding : 7px 0 7px 0;
+		float: right;
+	}
+	.logi_menu li{
+		
 		color:white;
+		margin: 0 auto;
+		margin-left:3.5px;
+		display: inline-block;
+		line-height:  26px;
+		font-size: 18.5px;
+		letter-spacing: 0.7px;
+	
 	}
 	
 	/*header 끝*/
@@ -51,9 +61,63 @@
 	/*section 시작*/
 	.main{
 		width: 100%;
-		height: 1000px;
-		background-color: gray;
+		height: 950px;
+		background-color: #fafafa;;
 	}
+	.main_menu{
+		width: 100%;
+		height: 235px;
+		background-image: url("./images/bg-top.png");
+		margin: 0 auto;
+	}
+	.mm{
+		
+		width: 796px;
+		height: 40px;
+		background-color : black;
+		margin: 0 auto;
+	
+	}
+	
+	
+	
+	.sub_menu{
+		width: 53%;
+		height: 690px;
+		padding: 5px;
+		margin:0 auto;
+		
+		
+	}
+	.images{
+		width:242.5px;
+		height:220px;
+		position: relative;
+		display: inline-block;
+		border: 1px solid #d9d9d9;
+		margin: 0 auto;
+		margin: 5px 1px;
+	}
+	.text{
+		position: absolute;
+		left: 15px;
+		top:15px;
+		font-size: 17px;
+		font-weight: bolder;
+	}
+	.text1{
+		position: absolute;
+		left: 15px;
+		top: 40px;
+		font-size: 13px;
+		color:#999;
+	}
+	.images > img{
+		width: 100%;
+		height: 220px;
+	}
+	
+	
 	
 	/*section 끝*/
 	
@@ -62,6 +126,13 @@
 		width: 100%;
 		height: 413.31px;
 		background-color: white;
+	}
+	.sub_footer{
+		width: 100%;
+		height: 47.44px;
+		border-top:1px solid black;
+		border-bottom:1px solid black;  
+		 
 	}
 	/*footer 끝*/
 </style>
@@ -75,7 +146,7 @@
 				<img alt="" src="./images/logo-yogiyo.png">
 			</div >
 			<div class=logi>
-				<ul>
+				<ul class= "logi_menu">
 					<li>로그인</li>
 					<li>회원가입</li>
 				</ul>
@@ -89,15 +160,95 @@
 	
 	<!--main 시작  -->
 	<section class="main">
-		<article class="main_menu"></article>
-		<section class="sub_menu"></section>
+		<article class="main_menu">
+			<article class="mm">
+			</article>
+			
+		</article>
+		<section class="sub_menu">
+		
+		<div class="images">
+		<img src="./images/1808_mw_homebanner_srw_f0001e.png">
+		</div>
+		
+		<div class="images">
+		<img src="./images/category-01.png">
+		<p class="text">전체보기</p>
+		<p class="text1">View All</p>
+	</div>
+	
+	<div class="images">
+		<img src="./images/category-02.png">
+		<p class="text">치킨</p>
+		<p class="text1">Chicken</p>
+	</div>
+	
+	<div class="images">
+		<img src="./images/category-03.png">
+		<p class="text">피자</p>
+		<p class="text1">Pizza</p>
+	</div>
+	
+	<div class="images">
+		<img src="./images/category-04.png">
+		<p class="text">중국집</p>
+		<p class="text1">Chinese Food</p>
+	</div>
+	
+	<div class="images">
+		<img src="./images/category-05.png">
+		<p class="text">한식</p>
+		<p class="text1">Korean Food</p>
+	</div>
+	
+	<div class="images">
+		<img src="./images/category-06.png">
+		<p class="text">일식</p>
+		<p class="text1">Japanese Food</p>
+	</div>
+	
+	<div class="images">
+		<img src="./images/category-07.png">
+		<p class="text">족발/보쌈</p>
+		<p class="text1">Jokbal/Bossam</p>
+	</div>
+	
+	<div class="images">
+		<img src="./images/category-08.png">
+		<p class="text">야식</p>
+		<p class="text1">Late Night Snack</p>
+	</div>
+	
+	<div class="images">
+		<img src="./images/category-09.png">
+		<p class="text">분식</p>
+		<p class="text1">Carb Snacks</p>
+	</div>
+	
+	<div class="images">
+		<img src="./images/category-10.png">
+		<p class="text">프랜차이즈</p>
+		<p class="text1">Franchise</p>
+	</div>
+	
+	<div class="images">
+		<img src="./images/category-11.png">
+		<p class="text">Cafe/Dessert</p>
+		<p class="text1">View All</p>
+	</div>
+	
+	
+		</section>
 	
 	</section>
 	<!-- main 끝 -->
 	
 	
 	<!-- footer 시작-->
-	<footer class="footer"></footer>
+	<footer class="footer">
+		<article class="sub_footer"></article>
+	
+	</footer>
 	
 
 
